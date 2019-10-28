@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    >
+    <Button
+        android:id="@+id/bt_move"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="跟随手指移动"/>
+    <Button
+        android:id="@+id/bt_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="搜索框"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/bt_plane"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="飞机移动"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/bt_plane2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="飞机移动2"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/bt_tanqiu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="弹球游戏"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/bt_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="逐帧动画"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/bt_tween"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="补间动画"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:id="@+id/tv_5554"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

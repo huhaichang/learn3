@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+   <Button
+    android:id="@+id/bt_networkBCR"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textAllCaps="false"
+    android:text="网络BroadcastReceiver"
+    />
+
+    <Button
+        android:id="@+id/bt_customBCR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="发送自定义广播（可跨APP）"
+        android:layout_marginTop="15dp"
+        />
+    <Button
+        android:id="@+id/bt_localBCR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="发送自定义本地广播"
+        android:layout_marginTop="15dp"
+        />
+    <Button
+        android:id="@+id/bt_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="通过广播强制下线"
+        android:layout_marginTop="15dp"
+        />
+
+</LinearLayout>

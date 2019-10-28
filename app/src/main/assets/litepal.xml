@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<litepal>
+    <dbname value="BookStore"/>
+    <version value="9"/>
+    <list>
+        <mapping class="com.example.huhaichang.learn3.seven.widget.BookE"></mapping>
+        <mapping class="com.example.huhaichang.learn3.eight.widget.UserManage"></mapping>
+        <mapping class="com.example.huhaichang.learn3.eleven.widget.City"></mapping>
+    </list>
+</litepal>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+  >
+    <Button
+        android:id="@+id/bt_openService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="服务开关"/>
+    <Button
+        android:id="@+id/bt_bindService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="服务绑定"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="以上是开启服务的2种方法
+    开启优先级大于绑定"
+        android:layout_gravity="center"
+        android:textStyle="bold"/>
+    <Button
+        android:id="@+id/bt_styleService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="服务风格"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/bt_downloadApplication"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="应用下载"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

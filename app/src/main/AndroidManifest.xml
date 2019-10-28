@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.huhaichang.learn3">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+
+    <application
+        android:name="org.litepal.LitePalApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Learn"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="kgUvjjZTuuG7FIFR5AclNqvArjlfVzPh" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <activity
+            android:name=".two.TwoMainActivity"
+            android:theme="@style/AppThemeTest" />
+        <activity
+            android:name=".two.ImageViewActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".two.GirdViewActivity" />
+        <activity android:name=".two.recyclerview.LinearRecycleViewActivity" />
+        <activity android:name=".two.recyclerview.HoriRecycleViewActivity" />
+        <activity android:name=".two.recyclerview.GridRecycleViewActivity" />
+        <activity android:name=".two.recyclerview.PubuRecyclerViewActivity" />
+        <activity android:name=".two.WebViewActivity" />
+        <activity android:name=".two.NewsActivity" />
+        <activity android:name=".three.ToastActivity" />
+        <activity android:name=".three.ThreeMainActivity" />
+        <activity android:name=".three.AlertDialogActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".three.ProgressActivity" />
+        <activity android:name=".three.CustomDialogActivity" />
+        <activity android:name=".three.PopupWindowActivity" />
+        <activity
+            android:name=".four.AActivity"
+            android:label="AActivity"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".four.BActivity"
+            android:label="BActivity"
+            android:launchMode="singleInstance" />
+        <activity android:name=".four.FourMainActivity" />
+        <activity android:name=".four.ContainerActivity" />
+        <activity android:name=".five.FiveMainActivity" />
+        <activity android:name=".five.EventActivity" />
+        <activity android:name=".five.HandlerActivity" />
+        <activity android:name=".five.ThreadDelayActivity" />
+        <activity android:name=".seven.SevenMainActivity" />
+        <activity android:name=".seven.DataStorageActivity" />
+        <activity android:name=".seven.datastorage.SharePreferencesActivity" />
+        <activity android:name=".seven.datastorage.FileActivity" />
+        <activity android:name=".two.ChattingActivity" />
+        <activity android:name=".four.NewTitleActivity" />
+        <activity android:name=".four.NewsContentActivity" />
+        <activity android:name=".eight.EightMainActivity" />
+        <activity android:name=".eight.NetworkBroadcastActivity" />
+
+        <receiver
+            android:name=".eight.BootCompleteReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".eight.CustomBroadcastActivity" />
+
+        <receiver
+            android:name=".eight.MyBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="customName" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".eight.LocalCustomBroadcastActivity" />
+        <activity android:name=".eight.LogonActivity" />
+        <activity android:name=".eight.Logon1Activity" />
+        <activity android:name=".eight.Logon2Activity" />
+        <activity android:name=".seven.datastorage.SQLiteActivity" />
+        <activity android:name=".seven.datastorage.LitePalActivity" />
+        <activity android:name=".eight.ZhuCeiActivity" />
+        <activity android:name=".nine.NineMainActivity" />
+        <activity android:name=".nine.CallPhoneActivity" />
+        <activity android:name=".nine.PhoneInformationActivity" />
+
+        <provider
+            android:name=".nine.DatabaseProvider"
+            android:authorities="com.example.huhaichang.learn3.provider"
+            android:enabled="true"
+            android:exported="true" />
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.huhaichang.learn3.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".nine.MyProviderActivity" />
+        <activity android:name=".ten.TenMainActivity" />
+        <activity android:name=".ten.SendNoticeActivity" />
+        <activity android:name=".ten.TakePhotoActivity" />
+        <activity android:name=".ten.TimeAddActivity" />
+        <activity
+            android:name=".ten.PlayMediaActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|screenLayout" />
+        <activity
+            android:name=".ten.PlayVideoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|screenLayout" />
+        <activity android:name=".eleven.ElevenMainActivity" />
+        <activity android:name=".eleven.HttpURLConnectionActivity" />
+        <activity android:name=".eleven.OkHttpActivity" />
+        <activity android:name=".eleven.PullFromXMLActivity" />
+        <activity android:name=".eleven.SAXFromXMLActivity" />
+        <activity android:name=".eleven.JSONObjectFromJSONActivity" />
+        <activity android:name=".eleven.GSONFromJSONActivity" />
+        <activity android:name=".twelve.TwelveMainActivity" />
+        <activity android:name=".twelve.ServiceTestActivity" />
+
+        <service
+            android:name=".twelve.MyService"
+            android:enabled="true"
+            android:exported="true" />
+        <service android:name=".twelve.MyIntentService" />
+
+        <activity android:name=".twelve.ServiceBindedActivity" />
+        <activity android:name=".twelve.StyleServiceActivity" />
+
+        <service
+            android:name=".twelve.APPDownload.DownloadService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".twelve.APPDownload.DownloadAPPlicationActivity" />
+        <activity android:name=".thirteen.ThirteenMainActivity" />
+        <activity android:name=".thirteen.LBSTestActivity" />
+        <activity android:name=".thirteen.BaiduMapActivity" />
+        <activity android:name=".fourteen.FourteenMainActivity" />
+        <activity
+            android:name=".fourteen.ToolbarActivity"
+            android:label="Fruits"
+            android:theme="@style/AppThemeTest" />
+        <activity
+            android:name=".fourteen.SlideMenuActivity"
+            android:theme="@style/AppThemeTest" />
+        <activity
+            android:name=".fourteen.NavigationViewActivity"
+            android:theme="@style/AppThemeTest" />
+        <activity
+            android:name=".fourteen.NavigationView2Activity"
+            android:theme="@style/AppThemeTest" />
+        <activity
+            android:name=".fourteen.FloatingActionButtonActivity"
+            android:theme="@style/AppThemeTest" />
+        <activity
+            android:name=".fourteen.CardLayoutActivity"
+            android:label="升级版的帧垂直布局（滑动隐藏）"
+            android:theme="@style/AppThemeTest" />
+        <activity
+            android:name=".fourteen.CollapsingToolbarActivity"
+            android:label="Grape"
+            android:theme="@style/F123456789Theme" />
+        <activity
+            android:name=".fifteen.FifteenMainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".fifteen.Intent1Activity" />
+        <activity android:name=".fifteen.Intent2Activity" />
+        <activity
+            android:name=".fifteen.ViewPaperActivity"
+            android:theme="@style/AppThemeTest" />
+        <activity android:name=".two.RaidoButtonActivity" />
+        <activity android:name=".fifteen.HYaActivity" />
+        <activity
+            android:name=".fifteen.HYa2Activity"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".fifteen.LoginDataActivity" />
+        <activity android:name=".fifteen.RegisterDataActivity" />
+        <activity android:name=".fifteen.AD.ADActivity" />
+        <activity android:name=".fifteen.AD.DeleteActivity" />
+        <activity android:name=".fifteen.AD.AddActivity" />
+        <activity android:name=".sixteen.SixteenMainActivity" />
+        <activity android:name=".sixteen.MoveActivity" />
+        <activity android:name=".sixteen.SearchActivity" />
+        <activity
+            android:name=".sixteen.PlaneActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".sixteen.Plane2Activity"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".sixteen.TanqiuActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity android:name=".sixteen.FrameActivity" />
+        <activity android:name=".sixteen.TweenActivity" />
+        <activity android:name=".fifteen.SMSActivity" />
+    </application>
+
+</manifest>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <include layout="@layout/title" />
+
+    <ScrollView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/bt_intent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="Intent传替对象"
+                android:textAllCaps="false" />
+            <Button
+                android:id="@+id/bt_viewPaper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ViewPaper"
+                android:textAllCaps="false"
+                android:layout_margin="15dp"/>
+            <Button
+                android:id="@+id/bt_hYa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HYa"
+                android:textAllCaps="false"
+                android:layout_margin="15dp"/>
+            <Button
+                android:id="@+id/bt_hYa2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HYa2"
+                android:textAllCaps="false"
+                android:layout_margin="15dp"/>
+            <Button
+                android:id="@+id/bt_loginData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="获取登录数据"
+                android:layout_margin="15dp"/>
+            <Button
+                android:id="@+id/bt_registerData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="注册数据"
+                android:layout_margin="15dp"/>
+            <Button
+                android:id="@+id/bt_yuan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="滑动小圆点"
+                android:layout_margin="15dp"/>
+            <Button
+                android:id="@+id/bt_sms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="发送短信"
+                android:layout_margin="15dp"/>
+            <TextView
+                android:id="@+id/tv_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="1234"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

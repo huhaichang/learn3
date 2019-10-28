@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:orientation="vertical"
+    android:layout_margin="15dp">
+    <Button
+        android:id="@+id/bt_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开始(27张图片)"/>
+    <Button
+        android:id="@+id/bt_stop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="结束(逐帧播放)"/>
+    <ImageView
+        android:id="@+id/iv_kongfu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/kongfu"/>
+</LinearLayout>

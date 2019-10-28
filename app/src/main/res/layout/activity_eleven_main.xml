@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:padding="20dp">
+<Button
+    android:id="@+id/bt_sendRequest"
+    android:text="HttpURLConnection"
+    android:textAllCaps="false"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/bt_okHttpSendRequest"
+        android:text="OkHttp"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/bt_pull"
+        android:text="Pull解析XML"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/bt_sAX"
+        android:text="SAX解析XML"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/bt_jSONObject"
+        android:text="JSONObject解析JSON"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/bt_gSON"
+        android:text="GSON解析JSON"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>

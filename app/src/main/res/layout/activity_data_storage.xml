@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+   >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="数据存储方式:"
+        android:textStyle="bold"/>
+<Button
+    android:id="@+id/bt_sharedpreferences"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:text="SharedPreferences"
+    android:layout_marginTop="15dp"
+    android:textAllCaps="false"/>
+    <Button
+        android:id="@+id/bt_file"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="File"
+        android:textAllCaps="false"
+        android:layout_marginTop="15dp"/>
+    <Button
+        android:id="@+id/bt_SQLite"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="SQLite"
+        android:textAllCaps="false"
+        android:layout_marginTop="15dp"/>
+    <Button
+        android:id="@+id/bt_litePal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="LitePal"
+        android:textAllCaps="false"
+        android:layout_marginTop="15dp"/>
+</LinearLayout>

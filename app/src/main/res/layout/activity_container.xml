@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+    <TextView
+        android:id="@+id/tv_accept"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="准备接收AFragment的消息"
+        android:textAllCaps="false"
+        />
+    <Button
+        android:id="@+id/bt_change"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="更换Fragment"
+        android:textAllCaps="false"
+        android:layout_below="@id/tv_accept"/>
+
+<FrameLayout
+    android:id="@+id/fl_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/bt_change"
+    >
+
+</FrameLayout>
+</RelativeLayout>

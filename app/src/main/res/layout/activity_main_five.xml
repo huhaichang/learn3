@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  android:orientation="vertical"
+    android:layout_margin="15dp">
+    <Button
+        android:id="@+id/bt_event"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="事件机制"/>
+    <Button
+        android:id="@+id/bt_handler"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="消息处理机制"
+        android:layout_marginTop="15dp"/>
+    <Button
+        android:id="@+id/bt_threadDelay"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="线程延时"
+        android:layout_marginTop="15dp"/>
+
+
+
+</LinearLayout>

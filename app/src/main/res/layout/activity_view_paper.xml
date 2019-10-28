@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="#f7614d"
+        android:fitsSystemWindows="true">
+
+        <TextView
+            android:id="@+id/tv_picture"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="图片"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_movie"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="电影"
+            android:textStyle="bold"
+            android:textColor="#fcc9c5"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_music"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="音乐"
+            android:textStyle="bold"
+            android:textColor="#fcc9c5"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2.7dp"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:background="#f7614d"
+        >
+        <ImageView
+            android:id="@+id/cursor"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="2.7dp"
+            android:scaleType="matrix"
+            android:src="#ffffff" />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="2.7dp"
+            android:scaleType="matrix"
+            android:src="#ffffff"
+            android:visibility="invisible"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="2.7dp"
+            android:scaleType="matrix"
+            android:src="#ffffff"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation">
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

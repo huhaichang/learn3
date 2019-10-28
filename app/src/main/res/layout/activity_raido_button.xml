@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.huhaichang.learn3.two.RaidoButtonActivity"
+    >
+<RadioGroup
+    android:id="@+id/rg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <RadioButton
+        android:id="@+id/rb_1"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:text="图片"
+        android:gravity="center"
+        android:drawableTop="@drawable/icon"
+        />
+    <RadioButton
+        android:id="@+id/rb_2"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:gravity="center"
+        android:text="视频"
+        android:drawableTop="@drawable/back"/>
+    <RadioButton
+        android:id="@+id/rb_3"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:gravity="center"
+        android:text="音乐"
+        android:drawableTop="@drawable/goodbay1"/>
+</RadioGroup>
+
+</android.support.constraint.ConstraintLayout>

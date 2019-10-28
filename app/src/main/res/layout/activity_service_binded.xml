@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    >
+    <Button
+        android:id="@+id/bt_bindService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="绑定服务"/>
+    <Button
+        android:id="@+id/bt_unbindService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="解除绑定"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="当前进度：...."
+        android:layout_marginTop="20dp"/>
+    <Button
+    android:id="@+id/bt_getProgress"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="查看进度"
+    android:layout_marginTop="20dp"/>
+
+</LinearLayout>
